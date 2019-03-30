@@ -1,0 +1,53 @@
+<!--
+Copyright 2019 Simone Scardapane. Demo for TVML 2019.
+-->
+
+<!doctype html>
+<head>
+</head>
+
+<body>
+
+<h1>TVML 2019</h1>
+<h2>Learning the 'max' function with TensorFlow.js</h2>
+
+<hr />
+<div>
+<button id="trainModel">Train Model</button>
+<p id="log"></p>
+</div>
+<div class="plot"></div>
+
+<hr />
+<div>
+<button id="testModel">Test Model</button>
+<p><strong>Test input array</strong>: <span id="testInput" />Train first</p>
+<p><strong>Predicted largest element</strong>: <span id="testOutput" />Train first</p>
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+<script src="index.js"></script>
+
+<style>
+  body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin-top: 50px;
+    margin-left: 50px;
+	font-size: 30px;
+  }
+  #trainModel, #testModel {
+	background-color: #4CAF50;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+	font-size: 30px;
+  }
+  .plots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+</style>
